@@ -1,6 +1,6 @@
 <template>
-  <div id="app" class="container">
-    <div id="nav">
+  <div id="app" class="container-fluid">
+    <div id="nav" class="navbar">
       <div class="route-left">
         <router-link to="/">Home</router-link>
         <router-link to="/about">About</router-link>
@@ -9,37 +9,43 @@
       <div class="route-center">
         <router-link to="/landie">Landie</router-link>
       </div>
-      <b-button class="route-right" variant="warning">Button Label</b-button>
+      <b-button class="route-right" squared variant="warning">Button Label</b-button>
     </div>
     <router-view/>
   </div>
 </template>
 <style lang="stylus">
 #app
-  font-family 'Avenir', Helvetica, Arial, sans-serif
+  width 1310px
+  height 1161px
   background-image url('assets/img1.png')
-  height 1000px
   background-position top right
   background-repeat no-repeat
   background-size contain
-  position relative
-  width 1000px
+  .container-fluid
+    font-family 'Avenir', Helvetica, Arial, sans-serif
 #nav
-  padding-top 30px
-  display flex
-  justify-content space-between
   .route-center
     position absolute
-    right 50%
-    left 50%
+    right 58%
+    left 42%
+    a
+      font-size 1.5rem
+      font-weight bold
+      color #364386
+  .route-right
+    width 160px
+    height 26px
+    margin-right 140px
+    font-size 13px
   a
     color #4e5e96
     font-family sans-serif
-    font-size 18px
+    font-size 13px
     font-weight 400
     light-height 30px
     text-decoration none
-    padding 20px
+    padding-right 66px
     &.router-link-exact-active
-      color #0000ff
+      color #364386
 </style>
