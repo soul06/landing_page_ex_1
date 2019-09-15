@@ -41,14 +41,10 @@
 
 <script>
 export default {
-  name: 'LandingPageOne',
-  props: {
-    msg: String
-  }
+  name: 'LandingPageOne'
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="stylus">
   .ld-pg-1
     margin-top 850px
@@ -68,5 +64,4 @@ export default {
         font-weight 400
         light-height 30px
         margin-bottom 10px
-
 </style>

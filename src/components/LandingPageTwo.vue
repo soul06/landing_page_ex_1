@@ -24,13 +24,9 @@ export default {
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="stylus">
   .ld-pg-2
     margin-top 200px
-    .mini-logo
-      width 20%
     .row
       .content-headline
         font-family sans-serif
