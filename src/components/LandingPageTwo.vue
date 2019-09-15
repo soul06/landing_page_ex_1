@@ -1,16 +1,16 @@
 <template>
-  <div class="container-fluid">
+  <div class="ld-pg-2">
     <div class="row">
       <div class="col-12 col-md-12 col-lg-6">
-        <div class="content-headline">Introduce Your Product Quickly & Effectively</div>
+         <img :src="require(`@/assets/${imgName}.png`)" alt="target">
+      </div>
+      <div class="col-12 col-md-12 col-lg-6">
+        <div class="content-headline">Design Your Own Pages</div>
         <div class="content-bio">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et mahnis dis parturient montes, nascetur ridiculus</div>
         <div class="content-bio">mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</div>
         <div class="action">
           <b-button class="action-btn" squared variant="outline-secondary">Button Label</b-button>
-          <b-button class="action-btn" squared variant="outline-secondary">Button Label</b-button>
         </div>
-      </div>
-      <div class="col-12 col-md-12 col-lg-6">
       </div>
     </div>
   </div>
@@ -18,17 +18,19 @@
 
 <script>
 export default {
-  name: 'LandingPage',
+  name: 'LandingPageTwo',
   props: {
-    msg: String
+    imgName: String
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="stylus">
-  .container-fluid
-    margin-top 300px
+  .ld-pg-2
+    margin-top 200px
+    .mini-logo
+      width 20%
     .row
       .content-headline
         font-family sans-serif

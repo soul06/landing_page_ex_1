@@ -17,7 +17,7 @@
 <style lang="stylus">
 #app
   width 1310px
-  height 1161px
+  min-height 1161px
   background-image url('assets/img1.png')
   background-position top right
   background-repeat no-repeat
